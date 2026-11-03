@@ -133,7 +133,7 @@ layout_head('Kelola Kamar', 'admin', 'kamar');
           <?php endforeach; ?>
         </select></div>
       <div class="form-grid">
-        <div class="field"><label>Kode Kamar *</label><input type="text" name="kode" data-f="kode" placeholder="S1-08" required></div>
+        <div class="field"><label>Kode Kamar *</label><input type="text" name="kode" data-f="kode" placeholder="B1-08" required></div>
         <div class="field"><label>Tipe *</label><input type="text" name="tipe" data-f="tipe" placeholder="Standard" required></div>
         <div class="field"><label>Lantai</label><input type="number" name="lantai" data-f="lantai" min="1" value="1"></div>
         <div class="field"><label>Harga / bulan *</label>

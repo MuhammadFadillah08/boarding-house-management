@@ -284,7 +284,7 @@ if (in_array($cmd, ['KELUAR', 'MASUK', 'LAPORAN', 'KAS', 'BATAL'], true)) {
             if ($isAdmin) {
                 $balas .= "*Perintah pengelola:*\n"
                         . "▪️ *KELUAR 150rb token listrik* — catat pengeluaran\n"
-                        . "▪️ *MASUK 500rb deposit S1-03* — catat pemasukan\n"
+                        . "▪️ *MASUK 500rb deposit B1-03* — catat pemasukan\n"
                         . "▪️ *LAPORAN* — ringkasan bulan ini\n"
                         . "▪️ *LAPORAN JULI* — ringkasan bulan lain\n"
                         . "▪️ *KAS* — daftar transaksi kas\n"

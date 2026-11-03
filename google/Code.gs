@@ -345,7 +345,7 @@ function menuAdmin_() {
   return 'Halo! 👋 Saya asisten keuangan *' + cfg_('nama_kost', 'Boarding House') + '*.\n\n' +
          '*Perintah pengelola:*\n' +
          '▪️ *KELUAR 150rb token listrik* — catat pengeluaran\n' +
-         '▪️ *MASUK 500rb deposit S1-03* — catat pemasukan\n' +
+         '▪️ *MASUK 500rb deposit B1-03* — catat pemasukan\n' +
          '▪️ *LAPORAN* — ringkasan bulan ini\n' +
          '▪️ *LAPORAN JULI* — ringkasan bulan lain\n' +
          '▪️ *KAS* — daftar transaksi kas\n' +

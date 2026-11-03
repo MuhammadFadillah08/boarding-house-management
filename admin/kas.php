@@ -220,7 +220,7 @@ layout_head('Buku Kas', 'admin', 'kas');
         <b>admin</b> yang boleh mencatat kas.</p>
       <div class="kv small" style="grid-template-columns:auto 1fr;gap:10px 14px">
         <b><code>KELUAR 150rb token listrik</code></b><span class="muted">catat pengeluaran</span>
-        <b><code>MASUK 500rb deposit kamar S1-03</code></b><span class="muted">catat pemasukan</span>
+        <b><code>MASUK 500rb deposit kamar B1-03</code></b><span class="muted">catat pemasukan</span>
         <b><code>LAPORAN</code></b><span class="muted">ringkasan bulan ini</span>
         <b><code>LAPORAN JULI</code></b><span class="muted">ringkasan bulan lain</span>
         <b><code>BATAL</code></b><span class="muted">hapus catatan terakhir</span>

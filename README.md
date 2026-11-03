@@ -19,6 +19,20 @@ The interface is in **Indonesian**. All data in this repository is **fictional d
 - **Google Sheets bridge (optional)** — Apps Script in `google/` mirrors the cash ledger.
 - Security basics: PDO prepared statements, CSRF tokens, bcrypt, upload hardening via `.htaccess`.
 
+## Screenshots
+
+All screenshots show fictional demo data.
+
+| Public catalog | Admin dashboard |
+|---|---|
+| ![Public catalog](docs/screenshots/01-katalog.png) | ![Admin dashboard](docs/screenshots/02-dashboard-admin.png) |
+| **Invoices** | **Cash ledger** |
+| ![Invoices](docs/screenshots/03-tagihan.png) | ![Cash ledger](docs/screenshots/04-kas.png) |
+
+**Tenant area**
+
+![Tenant home](docs/screenshots/05-penyewa.png)
+
 ## Quick start (XAMPP)
 
 1. Start **Apache** and **MySQL**.
