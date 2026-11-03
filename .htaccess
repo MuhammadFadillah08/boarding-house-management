@@ -1,0 +1,35 @@
+# ---------------------------------------------------------------
+# Boarding House - konfigurasi Apache (kompatibel XAMPP & InfinityFree)
+# ---------------------------------------------------------------
+DirectoryIndex index.php
+
+# Sembunyikan daftar isi folder
+Options -Indexes
+
+# Blokir akses langsung ke folder kode inti.
+# Pola lama (^/.*/app/) hanya cocok bila aplikasi berada di dalam subfolder,
+# sehingga TIDAK melindungi apa pun saat di-deploy di root domain.
+# Perlindungan utamanya ada di app/.htaccess dan cek konstanta di tiap berkas.
+RedirectMatch 403 (^|/)app/.*\.php$
+
+<IfModule mod_headers.c>
+  Header set X-Content-Type-Options "nosniff"
+  Header set X-Frame-Options "SAMEORIGIN"
+  Header set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>
+
+# Cache aset statis
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType text/css "access plus 7 days"
+  ExpiresByType application/javascript "access plus 7 days"
+  ExpiresByType image/jpeg "access plus 30 days"
+  ExpiresByType image/png "access plus 30 days"
+  ExpiresByType image/webp "access plus 30 days"
+</IfModule>
+
+# Halaman error bergaya. Jalur diambil relatif terhadap root situs; bila
+# aplikasi dipasang di subfolder, sesuaikan awalan /boarding-house-management di bawah ini.
+ErrorDocument 403 /error.php
+ErrorDocument 404 /error.php
+ErrorDocument 500 /error.php

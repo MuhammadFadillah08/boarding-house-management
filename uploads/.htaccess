@@ -1,0 +1,7 @@
+# Folder unggahan: hanya boleh menyajikan gambar, bukan mengeksekusi skrip.
+Options -Indexes -ExecCGI
+AddType text/plain .php .php3 .php4 .php5 .php7 .phtml .pl .py .cgi .sh .html .htm
+
+<FilesMatch "\.(php|phtml|php[0-9]|pl|py|cgi|sh|html?)$">
+  Require all denied
+</FilesMatch>

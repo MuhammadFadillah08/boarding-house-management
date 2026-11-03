@@ -1,0 +1,18 @@
+# Kredensial & konfigurasi lokal — jangan pernah di-commit
+app/config.local.php
+.env
+
+# Berkas unggahan pengguna (bukti pembayaran, foto kamar)
+uploads/bukti/*
+uploads/kamar/*
+!uploads/bukti/.gitkeep
+!uploads/bukti/index.html
+!uploads/kamar/.gitkeep
+!uploads/kamar/index.html
+
+# Editor / OS / log
+.vscode/
+.idea/
+*.log
+Thumbs.db
+.DS_Store
